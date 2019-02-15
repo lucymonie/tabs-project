@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders content items 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ContentItem
+    article={
+      Object {
+        "fields": Object {
+          "trailText": "something else, something really overly long to fit in the space allowed in the trail text space, very long and totally over the top",
+          "wordcount": 3000,
+        },
+        "webTitle": "a lovely title",
+        "webUrl": "something",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <a
+          href="something"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          a lovely title
+        </a>,
+        <br />,
+        <span
+          className="trailText"
+        >
+          something else, something really overly long to fit in the space allowed...
+        </span>,
+        <span
+          className="readTime"
+        >
+          - 11 minute read
+        </span>,
+      ],
+      "className": "not-last-list-item",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "a lovely title",
+          "href": "something",
+          "rel": "noopener noreferrer",
+          "target": "_blank",
+        },
+        "ref": null,
+        "rendered": "a lovely title",
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "something else, something really overly long to fit in the space allowed...",
+          "className": "trailText",
+        },
+        "ref": null,
+        "rendered": "something else, something really overly long to fit in the space allowed...",
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "- 11 minute read",
+          "className": "readTime",
+        },
+        "ref": null,
+        "rendered": "- 11 minute read",
+        "type": "span",
+      },
+    ],
+    "type": "li",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <a
+            href="something"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            a lovely title
+          </a>,
+          <br />,
+          <span
+            className="trailText"
+          >
+            something else, something really overly long to fit in the space allowed...
+          </span>,
+          <span
+            className="readTime"
+          >
+            - 11 minute read
+          </span>,
+        ],
+        "className": "not-last-list-item",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "a lovely title",
+            "href": "something",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+          },
+          "ref": null,
+          "rendered": "a lovely title",
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "something else, something really overly long to fit in the space allowed...",
+            "className": "trailText",
+          },
+          "ref": null,
+          "rendered": "something else, something really overly long to fit in the space allowed...",
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "- 11 minute read",
+            "className": "readTime",
+          },
+          "ref": null,
+          "rendered": "- 11 minute read",
+          "type": "span",
+        },
+      ],
+      "type": "li",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

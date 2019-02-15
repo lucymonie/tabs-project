@@ -53,9 +53,15 @@ class App extends Component {
         <div className="container">
           <div className="news-widget">
             <div className="row">
-              {<div className="col s12 l6 offset-l6 news-tabs">
+              <div className="col s12 l6 offset-l6 news-tabs">
                 <Tabs>
-                  {sections.map(section => <Tab key={section} section={section} onClick={() => this.selectTab(section)} />)}
+                  {sections.map(section =>
+                    <Tab
+                      key={section}
+                      section={section}
+                      onClick={() => this.selectTab(section)}
+                    />
+                  )}
                 </Tabs>
                 {football && news && travel && (
                   <Fragment>
@@ -76,7 +82,7 @@ class App extends Component {
                     </Content>
                   </Fragment>
                 )}
-              </div>}
+              </div>
             </div>
           </div>
         </div>
