@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
-import { apiKey } from './config.js'
-import './App.css';
+import { apiKey } from '../config.js'
+import './app.css';
 
 import Header from './header'
 import Content from './content'
@@ -8,12 +8,20 @@ import ContentItem from './content-item'
 import Tabs from './tabs'
 import Tab from './tab'
 
+const ContentComposer = ({ section, articles, active }) =>
+  <Content key={section} id={section} show={active === section}>
+    {articles.map((result, i) =>
+      <ContentItem key={section + i} article={result} last={i === 4} />
+    )}
+  </Content>
+
+
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
       sections: ['football', 'news', 'travel'],
-      active: 'football'
+      active: 'news'
     }
   }
 
@@ -63,25 +71,29 @@ class App extends Component {
                     />
                   )}
                 </Tabs>
-                {football && news && travel && (
-                  <Fragment>
-                    <Content key="football" id="football" show={active === "football"}>
-                      {footballResults.map((result, i) =>
-                        <ContentItem key={'football' + i} article={result} last={i === 4} />
-                      )}
-                    </Content>
-                    <Content key="news" id="news" show={active === "news"}>
-                      {newsResults.map((result, i) =>
-                        <ContentItem key={'news' + i} article={result} last={i === 4} />
-                      )}
-                    </Content>
-                    <Content key="travel" id="travel" show={active === "travel"}>
-                      {travelResults.map((result, i) =>
-                        <ContentItem key={'travel' + i} article={result} last={i === 4} />
-                      )}
-                    </Content>
-                  </Fragment>
-                )}
+                <Fragment>
+                  {footballResults &&
+                    <ContentComposer
+                      section="football"
+                      articles={footballResults}
+                      active={active}
+                    />
+                  }
+                  {newsResults &&
+                    <ContentComposer
+                      section="news"
+                      articles={newsResults}
+                      active={active}
+                    />
+                  }
+                  {travelResults &&
+                    <ContentComposer
+                      section="travel"
+                      articles={travelResults}
+                      active={active}
+                    />
+                  }
+                </Fragment>
               </div>
             </div>
           </div>

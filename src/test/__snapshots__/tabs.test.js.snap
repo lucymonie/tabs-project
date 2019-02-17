@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders content 1`] = `
+exports[`renders tabs 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Content />,
+  Symbol(enzyme.__unrendered__): <Tabs />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -19,12 +19,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": undefined,
-      "className": "hide",
-      "id": undefined,
+      "className": "tabs",
     },
     "ref": null,
     "rendered": null,
-    "type": "ol",
+    "type": "ul",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -33,12 +32,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": undefined,
-        "className": "hide",
-        "id": undefined,
+        "className": "tabs",
       },
       "ref": null,
       "rendered": null,
-      "type": "ol",
+      "type": "ul",
     },
   ],
   Symbol(enzyme.__options__): Object {

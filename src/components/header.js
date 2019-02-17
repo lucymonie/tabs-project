@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './images/logo.png'
+import logo from '../images/logo.svg'
 
 const Header = () => (
   <header className="col s12 m12 l12">

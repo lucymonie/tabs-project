@@ -1,5 +1,5 @@
 header {
-	background-color: #005689;
+	background-color: #052962;
 	color: white;
 }
 
@@ -43,7 +43,7 @@ ol li {
 }
 
 .tabs-style {
-  color: #00507f !important;
+	color: #052962 !important;
   background-color: #f6f6f6 !important;
 	font-family: "Guardian Egyptian Text", Georgia, serif;
 	text-transform: capitalize !important;

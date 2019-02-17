@@ -1,12 +1,14 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Content from '../content'
+import Content from '../components/content'
+
+const component = shallow(<Content />)
 
 it('renders content', () => {
-  const component = shallow(<Content />)
-  const div = component.find('div').at(0)
-  const ol = component.find('ol').at(0)
   expect(component).toMatchSnapshot()
-  expect(div).toHaveLength(1)
+})
+
+it('contains an unordered list', () => {
+  const ol = component.find('ol').at(0)
   expect(ol).toHaveLength(1)
-});
+})

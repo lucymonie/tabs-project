@@ -1,9 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders content 1`] = `
+exports[`renders a tab 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Content />,
+  Symbol(enzyme.__unrendered__): <Tab
+    onClick={[MockFunction]}
+    section="technology"
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -18,13 +21,30 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": undefined,
-      "className": "hide",
-      "id": undefined,
+      "children": <a
+        className="tabs-style"
+        href="#technology"
+      >
+        technology
+      </a>,
+      "className": "tab col s4",
+      "onClick": [MockFunction],
     },
     "ref": null,
-    "rendered": null,
-    "type": "ol",
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "technology",
+        "className": "tabs-style",
+        "href": "#technology",
+      },
+      "ref": null,
+      "rendered": "technology",
+      "type": "a",
+    },
+    "type": "li",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -32,13 +52,30 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": undefined,
-        "className": "hide",
-        "id": undefined,
+        "children": <a
+          className="tabs-style"
+          href="#technology"
+        >
+          technology
+        </a>,
+        "className": "tab col s4",
+        "onClick": [MockFunction],
       },
       "ref": null,
-      "rendered": null,
-      "type": "ol",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "technology",
+          "className": "tabs-style",
+          "href": "#technology",
+        },
+        "ref": null,
+        "rendered": "technology",
+        "type": "a",
+      },
+      "type": "li",
     },
   ],
   Symbol(enzyme.__options__): Object {

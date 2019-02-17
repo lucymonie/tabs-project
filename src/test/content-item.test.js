@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import ContentItem from '../content-item'
+import ContentItem from '../components/content-item'
 
 const props = {
   article: {
