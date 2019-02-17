@@ -10,16 +10,16 @@ const truncateTrailText = (trailText) => {
   return shorterText
 }
 
-const ContentItem = ({ article, last }) => (
+const ContentItem = ({ trailText, webTitle, webUrl, wordcount, last }) => (
   <li className={last ? '' : "not-last-list-item"}>
-    <a href={article.webUrl} target="_blank" rel="noopener noreferrer">
-      {article.webTitle}
+    <a href={webUrl} target="_blank" rel="noopener noreferrer">
+      {webTitle}
     </a><br />
     <span className="trailText">
-      {truncateTrailText(article.fields.trailText)}
+      {truncateTrailText(trailText)}
     </span>
     <span className="readTime">
-      {`- ${calculateReadTime(article.fields.wordcount)} minute read`}
+      {`- ${calculateReadTime(wordcount)} minute read`}
     </span>
   </li>
 )

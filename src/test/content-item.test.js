@@ -3,14 +3,11 @@ import { shallow } from 'enzyme'
 import ContentItem from '../components/content-item'
 
 const props = {
-  article: {
-    webUrl: 'something',
-    webTitle: 'a lovely title',
-    fields: {
-      trailText: 'something else, something really overly long to fit in the space allowed in the trail text space, very long and totally over the top',
-      wordcount: 3000
-    }
-  }
+  webUrl: 'something',
+  webTitle: 'a lovely title',
+  trailText: 'something else, something really overly long to fit in the space allowed in the trail text space, very long and totally over the top',
+  wordcount: 3000,
+  last: false,
 }
 
 const component = shallow(<ContentItem {...props} />)

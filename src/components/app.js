@@ -11,7 +11,14 @@ import Tab from './tab'
 const ContentComposer = ({ section, articles, active }) =>
   <Content key={section} id={section} show={active === section}>
     {articles.map((result, i) =>
-      <ContentItem key={section + i} article={result} last={i === 4} />
+      <ContentItem
+        key={section + i}
+        webUrl={result.webUrl}
+        webTitle={result.webTitle}
+        trailText={result.fields.trailText}
+        wordcount={result.fields.wordcount}
+        last={i === 4}
+      />
     )}
   </Content>
 
@@ -21,7 +28,7 @@ class App extends Component {
     super(props)
     this.state = {
       sections: ['football', 'news', 'travel'],
-      active: 'news'
+      active: 'football'
     }
   }
 

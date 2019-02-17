@@ -4,16 +4,11 @@ exports[`renders content items 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ContentItem
-    article={
-      Object {
-        "fields": Object {
-          "trailText": "something else, something really overly long to fit in the space allowed in the trail text space, very long and totally over the top",
-          "wordcount": 3000,
-        },
-        "webTitle": "a lovely title",
-        "webUrl": "something",
-      }
-    }
+    last={false}
+    trailText="something else, something really overly long to fit in the space allowed in the trail text space, very long and totally over the top"
+    webTitle="a lovely title"
+    webUrl="something"
+    wordcount={3000}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
